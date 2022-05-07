@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Astroweb</title>
+		<link rel="stylesheet" href="style-test.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Prompt:wght@700&family=Roboto:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body style="background-color: #2b2a2a;">
+
+<section class="header">
+	<nav>
+		<a href="index.html"><img src="images/logo.jpg"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="test.html">IMAGES</a></li>
+				</ul>
+		</div>
+		<i class="fa fa-bars"onclick="showMenu()"></i>
+	</nav>
+	<h1>Showing all images</h1>
+</section>
+
+
+<div class="container">
+ 
+	<input type="text" placeholder="search images" id="search-box">
+
+	<div class="orange">
+		<div>
+		<h5>Showing some results</h5>
+
+		<label class="check">
+		<input type="checkbox" id="show_image">Show Image</input>
+		<span class="checkmark"></span>
+	  	</label>
+
+		</div>
+	</div>
+ 
+	<div class="gray">
+		<div class="image-container">
+
+			<div class="image" data-title="mw" data-title2="milky way">
+				<img src="thumb/milkyway-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/milkyway.jpg')">
+					<h3>The Milky Way</h3>
+				</div>
+			</div>
+	
+			<div class="image" data-title="moon" data-title2="venus">
+				<img src="thumb/mav-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/mav.png')">
+					<h3>Moon and Venus</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="cygnus">
+				<img src="thumb/cygnus-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/cygnus.png')">
+					<h3>Cygnus</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="orion">
+				<img src="thumb/orion-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/orion.png')">
+					<h3>Orion</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="andromeda">
+				<img src="thumb/andromeda-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/andromeda.png')">
+					<h3>Andromeda</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="mw" data-title2="milky way">
+				<img src="thumb/mw4-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/mw4.jpeg')">
+					<h3>The Milky Way</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="omega">
+				<img src="thumb/omegacentauri-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/omegacentauri.png')">
+					<h3>Omega Centauri</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="orion">
+				<img src="thumb/orion3-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/orion3.png')">
+					<h3>Orion</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="trails">
+				<img src="thumb/trails-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/trails.png')">
+					<h3>Star Trails</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="orion" data-title2="satellite">
+				<img src="thumb/satorion-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/satorion.jpg')">
+					<h3>Orion</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="orion">
+				<img src="thumb/orion4-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/orion4.jpg')">
+					<h3>Orion</h3>
+				</div>
+			</div>
+
+
+			<div class="image" data-title="andromeda">
+				<img src="thumb/andromeda2-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/andromeda2.jpg')">
+					<h3>Andromeda</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="mw" data-title2="milky way">
+				<img src="thumb/mw2-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/mw2.jpg')">
+					<h3>The Milky Way</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="mw" data-title2="milky way">
+				<img src="thumb/mw3-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/mw3.jpg')">
+					<h3>The Milky Way</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="mw" data-title2="milky way">
+				<img src="thumb/mw5-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/mw5.jpg')">
+					<h3>The Milky Way</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="orion">
+				<img src="thumb/satcloud-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/satcloud.jpg')"> 
+					<h3>Orion</h3>
+				</div>
+			</div>
+
+			<div class="image" data-title="orion">
+				<img src="thumb/orion 2-thumb.jpg" >
+				<div class="layer" onclick="javascript:window.open('images/orion2.jpg')">
+					<h3>Orion</h3>
+				</div>
+			</div>
+
+		
+	
+		</div>
+	</div>
+ </div>
+ 	
+	
+	
+	
+	
+	
+	<!-----------JavaScript for toggle menu------------>
+	<script>
+		var navLinks = document.getElementById("navLinks")
+		
+		function showMenu()
+		{
+			navLinks.style.right = "0"
+		}
+		
+		function hideMenu()
+		{
+			navLinks.style.right = "-200px"
+		}
+
+	</script>
+	
+<!--search----->
+	<script>
+
+		let searchBox = document.querySelector('#search-box');
+		let images = document.querySelectorAll('.container .image-container .image');
+		
+		searchBox.oninput = () =>{
+		   images.forEach(hide => hide.style.display = 'none');
+		   let value = searchBox.value;
+		  
+		   images.forEach(filter =>{
+			  let title = filter.getAttribute('data-title');
+			  let title2 = filter.getAttribute('data-title2');
+			  let letter = title.charAt(0);
+			  if(value == title || value ==letter || value == title2){
+				 filter.style.display = 'block';
+			  }
+			  if(searchBox.value == ''){
+				 filter.style.display = 'block';
+			  }
+		   });
+		};
+		
+	</script>
+	
+
+
+
+	<script type="text/javascript">
+		function openImage(imageUrl) { 
+		  window.open(theURL); 
+		} 
+	</script>
+	
+	
+	</body>
+
+
+
+
+	<footer>
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/picdumpacc"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<p>Picdumpacc</p>
+        </div>
+
+    </footer>
+	</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Astroweb</title>
+		<link rel="stylesheet" href="style-images.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body style="background-color:rgb(44, 44, 44);">
+
+<section class="header">
+	<nav>
+		<a href="index.html"><img src="images/logo.jpg"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+				</ul>
+		</div>
+		<i class="fa fa-bars"onclick="showMenu()"></i>
+	</nav>
+</section>
+
+<div class="container">
+
+	<h1 class="heading2">type to search images</h1>
+ 
+	<input type="text" placeholder="search images" id="search-box">
+</div>
+<!---------img------------>
+<section class="img">
+	<h1>blaj blah blah idk</h1>
+	<div class="orange">
+
+	</div>
+	<div class="blob">
+			<div class="allimg">
+			
+				<div class="row">
+					<div class="img-col">
+						<img src="thumb/orion-thumb.jpg">
+					</div>
+					
+					<div class="img-col">
+						<img src="thumb/andromeda-thumb.jpg">
+					</div>
+					
+					<div class="img-col">
+						<img src="thumb/milkyway-thumb.jpg">
+					</div>
+
+					<div class="img-col">
+						<img src="thumb/cygnus2-thumb.jpg">
+					</div>
+					
+					<div class="img-col">
+						<img src="thumb/orion3-thumb.jpg">
+					</div>
+
+				</div>
+				
+
+
+
+				<div class="row2">
+					<div class="img-col2"  data-title="cute">
+						<img src="thumb/orion 2-thumb.jpg">
+					</div>
+					
+					<div class="img-col2">
+						<img src="thumb/mav-thumb.jpg">
+					</div>
+
+					<div class="img-col2">
+						<img src="thumb/omegacentauri-thumb.jpg">
+					</div>
+
+					<div class="img-col2">
+						<img src="thumb/trails-thumb.jpg">
+					</div>
+
+					<div class="img-col2">
+						<img src="thumb/satcloud-thumb.jpg">
+					</div>
+				</div>
+
+				<div class="row3">
+					<div class="img-col3">
+						<img src="thumb/satorion-thumb.jpg">
+					</div>
+					
+					<div class="img-col3">
+						<img src="thumb/orion4-thumb.jpg">
+					</div>
+
+					<div class="img-col3">
+						<img src="thumb/andromeda2-thumb.jpg">
+					</div>
+
+					<div class="img-col3">
+						<img src="thumb/mw3-thumb.jpg">
+					</div>
+
+					<div class="img-col3">
+						<img src="thumb/mw2-thumb.jpg">
+					</div>
+				</div>
+
+				<div class="row4">
+					<div class="img-col4">
+						<img src="thumb/mw5-thumb.jpg">
+					</div>
+					
+					<div class="img-col4">
+						<img src="thumb/mw4-thumb.jpg">
+				</div>
+			</div>
+	</div>
+
+</section>
+		
+
+	
+	
+	
+	
+	
+	
+	<!-----------JavaScript for toggle menu------------>
+	<script>
+		var navLinks = document.getElementById("navLinks")
+		
+		function showMenu()
+		{
+			navLinks.style.right = "0"
+		}
+		
+		function hideMenu()
+		{
+			navLinks.style.right = "-200px"
+		}
+
+	</script>
+	
+
+	<!-------for search engine---------->
+	<script>
+
+		let searchBox = document.querySelector('#search-box');
+		let images = document.querySelectorAll('.img .blob .allimg');
+		
+		searchBox.oninput = () =>{
+		   images.forEach(hide => hide.style.display = 'none');
+		   let value = searchBox.value;
+		   images.forEach(filter =>{
+			  let title = filter.getAttribute('data-title');
+			  if(value == title){
+				 filter.style.display = 'block';
+			  }
+			  if(searchBox.value == ''){
+				 filter.style.display = 'block';
+			  }
+		   });
+		};
+		
+		</script>
+	
+	
+	
+	</body>
+
+
+
+
+	<footer>
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/picdumpacc"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<p>Picdumpacc</p>
+        </div>
+
+    </footer>
+	</html>
