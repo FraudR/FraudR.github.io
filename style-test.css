@@ -295,7 +295,7 @@ footer{
   
   
   .container .image-container .image img{
-	height: 200px;
+	height: 100%;
 	width: 100%;
 	object-fit: cover;
 	margin-bottom: 10px;
@@ -308,6 +308,7 @@ footer{
 	animation: fadeIn .35s ease-in;
 	transition:0.2s;
 	height:200px;
+	width:200px;
   }
   
  
