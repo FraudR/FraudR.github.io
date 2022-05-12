@@ -215,8 +215,8 @@
 			  let title = filter.getAttribute('data-title');
 			  let title2 = filter.getAttribute('data-title2');
 			  let letter = title.charAt(0);
-			  if(value == title || value ==letter || value == title2){
-				 filter.style.display = 'block';
+			  if(value.indexOf(title) >-1){
+				 filter.style.display = "";
 			  }
 			  if(searchBox.value == ''){
 				 filter.style.display = 'block';

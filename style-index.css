@@ -7,7 +7,7 @@
 .header{
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(30, 4, 4, 0.7),rgba(30, 4, 4, 0.7)),url(images/milkyway.jpg);
+	background-image: linear-gradient(rgba(26, 26, 26, 0.719),rgba(30, 4, 4, 0)),url(images/cygnus.png); 
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -61,6 +61,7 @@ nav img{
 		left: 50%;
 		transform: translate(-50%,-50%);
 		text-align: center;
+		margin-top: 5px;
 }
 .text-box hl{
 	font-size: 62px;
@@ -149,6 +150,7 @@ nav .fa{
 	overflow:hidden;
 	width:100%;
 	height: 50%;
+	border-radius:3%;
 
 }
 
@@ -157,7 +159,7 @@ nav .fa{
 	width: 100%;
 	display:block;
 	outline: rgb(26, 26, 26) solid 2px;
-	border-radius: 15px;
+	border-radius: 3%;
 	max-height: 75%;
 }
 
