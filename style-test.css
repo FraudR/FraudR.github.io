@@ -366,7 +366,7 @@ footer{
 
   @media (max-width:768px){
 	.container #search-box{
-	  width: 100%;
+	  width: 90%;
 	}
   }
   
