@@ -120,19 +120,7 @@ nav .fa{
 		padding: 30px;
 	}
 	
-	.recentimg h1{
-		font-size:20px;
-	}
-	
-	.recentimg{
-		width:90%;
-		margin:auto;
-		text-align:center;
-		padding-top:5%;
-		max-height: 50vh;
-		margin-bottom: 10%;
-	}
-	
+
 }
 
 
@@ -261,5 +249,18 @@ footer{
 
 
     transition: color .4s ease;
+
+}
+
+@media(max-width: 700px){
+
+	.recentimg h1{
+		font-size:20px;
+	}
+
+	.recentimg{
+		width:90%;
+
+	}
 
 }
