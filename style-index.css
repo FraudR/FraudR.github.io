@@ -120,6 +120,9 @@ nav .fa{
 		padding: 30px;
 	}
 	
+	.recentimg h1{
+		font-size:15px;
+	}
 	
 }
 
@@ -193,12 +196,12 @@ nav .fa{
 
 .recentimg p{
 	margin: 10px 0 40px;
-	font-size: 14px;
+	font-size: 1vw;
 	color: #fff;
 }
 .recentimg h1{
 	margin: 10px 0 40px;
-	font-size: 50px;
+	font-size: 3vw;
 	color: #fff;	
 }
 
