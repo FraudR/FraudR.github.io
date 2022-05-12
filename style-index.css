@@ -255,9 +255,12 @@ footer{
 @media(max-width: 700px){
 
 	.recentimg h1{
-		font-size:20px;
+		font-size:25px;
 	}
 
+	.recentimg p{
+		font-size:15px;
+	}
 	.recentimg{
 		width:90%;
 
