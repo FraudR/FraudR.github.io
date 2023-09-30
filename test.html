@@ -42,7 +42,7 @@
 		<h5>Showing some results</h5>
 
 		<label class="check">
-		<input type="checkbox" id="show_image">Show Image</input>
+		<input type="checkbox" id="show_image">Show only good images</input>
 		<span class="checkmark"></span>
 	  	</label>
 
@@ -197,11 +197,13 @@
 		function showMenu()
 		{
 			navLinks.style.right = "0"
+			navLinks.style.display = "block";
 		}
 		
 		function hideMenu()
 		{
 			navLinks.style.right = "-200px"
+			navLinks.style.display = "none";
 		}
 
 	</script>
@@ -214,14 +216,14 @@
 		
 		searchBox.oninput = () =>{
 		   images.forEach(hide => hide.style.display = 'none');
-		   let value = searchBox.value;
+		   let value = searchBox.value.toLowerCase();
 		  
 		   images.forEach(filter =>{
 			  let title = filter.getAttribute('data-title');
 			  let title2 = filter.getAttribute('data-title2');
 			  let letter = title.charAt(0);
-			  if(value == title || value ==letter || value == title2){
-				 filter.style.display = 'block';
+			  if(value.indexOf(title) >-1){
+				 filter.style.display = "";
 			  }
 			  if(searchBox.value == ''){
 				 filter.style.display = 'block';
