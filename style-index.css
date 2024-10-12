@@ -144,7 +144,7 @@ nav .fa {
 	}
 
 
-	<<<<<<< HEAD .row {
+	.row {
 		margin-top: 5%;
 		display: flex;
 		justify-content: space-between;
@@ -160,8 +160,6 @@ nav .fa {
 		max-height: 70vh;
 		margin-bottom: 10%;
 	}
-
-	=======>>>>>>>42d58846e5961da7389dc2450be9d7713ec5397e
 }
 
 
@@ -181,6 +179,8 @@ nav .fa {
 	padding-top: 5%;
 	max-height: 50vh;
 	margin-bottom: 10%;
+
+
 }
 
 .recentimg-col {
@@ -189,11 +189,10 @@ nav .fa {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	<<<<<<< HEAD height: 50vh;
+	height: 50vh;
 	max-height: 50vh;
-	=======height: 50%;
+	height: 50%;
 	border-radius: 3%;
-	>>>>>>>42d58846e5961da7389dc2450be9d7713ec5397e
 }
 
 .recentimg-col img {
@@ -201,11 +200,10 @@ nav .fa {
 	width: 100%;
 	display: block;
 	outline: rgb(26, 26, 26) solid 2px;
-	<<<<<<< HEAD border-radius: 15px;
+	border-radius: 15px;
 	max-height: 50vh;
-	=======border-radius: 3%;
+	border-radius: 3%;
 	max-height: 75%;
-	>>>>>>>42d58846e5961da7389dc2450be9d7713ec5397e
 }
 
 .layer {
@@ -240,17 +238,16 @@ nav .fa {
 
 .recentimg p {
 	margin: 10px 0 40px;
-	<<<<<<< HEAD font-size: 1.4vh;
-	;
-	=======font-size: 1vw;
-	>>>>>>>42d58846e5961da7389dc2450be9d7713ec5397e color: #fff;
+	font-size: 1.4vh;
+	font-size: 1vw;
+	color: #fff;
 }
 
 .recentimg h1 {
 	margin: 10px 0 40px;
-	<<<<<<< HEAD font-size: 3.9vh;
-	=======font-size: 3vw;
-	>>>>>>>42d58846e5961da7389dc2450be9d7713ec5397e color: #fff;
+	font-size: 3.9vh;
+	font-size: 3vw;
+	color: #fff;
 }
 
 footer {
