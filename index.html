@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Astroweb</title>
-		<link rel="stylesheet" href="style-index.css">
-		<link rel="icon" href="images/icon.png">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<title>Astroweb</title>
+	<link rel="stylesheet" href="style-index.css">
+	<link rel="icon" href="images/icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Prompt:wght@700&family=Roboto:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Prompt:wght@700&family=Roboto:wght@500&family=Varela+Round&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body style="background-color:rgb(44, 44, 44);">
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo.jpg"></a>
 
-<section class="header">
-	<nav>
-		<a href="index.html"><img src="images/logo.jpg"></a>
-		<div class="nav-links" id="navLinks">
-			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="test.html">IMAGES</a></li>
 				</ul>
-		</div>
-		<i class="fa fa-bars"onclick="showMenu()"></i>
-	</nav>
+			</div>
+
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<div class="overlay"></div>
 		<div class="text-box">
 			<h1>Click the button below to view all images</hl>
-			<p>blah blah blah</p>
-			<a href="test.html"class="hero-btn">View all images</a>
+				<p>blah blah blah</p>
+				<a href="test.html" class="hero-btn">View all images</a>
 		</div>
-		
-		</section>
-		
 
-	
-	
-	
+	</section>
+
+
+
+
+
 	<!---------recentimg------------>
 	<section class="recentimg">
 		<h1>3 most recent images</h1>
-		<p>blah bkahblah bkahblah bkahblah bkahblah lah bkahblah bkahblah bkahblah bkahblahbkahblah bkahblah blah bkah</p>
+		<p>blah bkahblah bkahblah bkahblah bkahblah lah bkahblah bkahblah bkahblah bkahblahbkahblah bkahblah blah bkah
+		</p>
 		<div class="row">
 			<div class="recentimg-col">
 				<img src="thumb long/cygnus-thumb.jpg">
@@ -52,57 +58,55 @@
 					<h3>Cygnus</h3>
 				</div>
 			</div>
-			
+
 			<div class="recentimg-col">
 				<img src="thumb long/milkyway-thumb.jpg">
 				<div class="layer">
 					<h3>Milkyway</h3>
 				</div>
 			</div>
-			
+
 			<div class="recentimg-col">
 				<img src="thumb long/orion-thumb.jpg">
-			<div class="layer">
+				<div class="layer">
 					<h3>Orion</h3>
-			</div>
+				</div>
 			</div>
 		</div>
-		
+
 	</section>
-	
-	
-	
-	
+
+
+
+
 	<!-----------JavaScript for toggle menu------------>
 	<script>
 		var navLinks = document.getElementById("navLinks")
-		
-		function showMenu()
-		{
+
+		function showMenu() {
 			navLinks.style.right = "0"
 			navLinks.style.display = "block";
 		}
-		
-		function hideMenu()
-		{
+
+		function hideMenu() {
 			navLinks.style.right = "-200px"
 			navLinks.style.display = "none";
 		}
 
 	</script>
-	
 
-	
-	
-	
-	</body>
 
-	<footer>
-        <div class="footer-content">
-            <ul class="socials">
-                <li><a href="https://www.instagram.com/picdumpacc"><i class="fa fa-instagram"></i></a></li>
-			</ul>
-			<p>Picdumpacc</p>
-        </div>
 
-    </footer>
+
+
+</body>
+
+<footer>
+	<div class="footer-content">
+		<ul class="socials">
+			<li><a href="https://www.instagram.com/picdumpacc"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		<p>Picdumpacc</p>
+	</div>
+
+</footer>
