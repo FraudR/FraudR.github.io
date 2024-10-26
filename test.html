@@ -18,7 +18,7 @@
 </head>
 
 
-<body style="background-color: #2b2a2a;">
+<body style="background-color: rgb(31,31,31);">
 
 	<section class="header">
 		<nav>
@@ -37,18 +37,8 @@
 
 
 	<div class="container">
-
-		<input type="text" placeholder="search images" id="search-box">
-
 		<div class="orange">
 			<div>
-				<h5>Showing some results</h5>
-
-				<label class="check">
-					<input type="checkbox" id="show_image">Show only good images</input>
-					<span class="checkmark"></span>
-				</label>
-
 			</div>
 		</div>
 
@@ -236,34 +226,6 @@
 		}
 
 	</script>
-
-	<!--search----->
-	<script>
-
-		let searchBox = document.querySelector('#search-box');
-		let images = document.querySelectorAll('.container .image-container .image');
-
-		searchBox.oninput = () => {
-			images.forEach(hide => hide.style.display = 'none');
-			let value = searchBox.value.toLowerCase();
-
-			images.forEach(filter => {
-				let title = filter.getAttribute('data-title');
-				let title2 = filter.getAttribute('data-title2');
-				let letter = title.charAt(0);
-				if (value.indexOf(title) > -1) {
-					filter.style.display = "";
-				}
-				if (searchBox.value == '') {
-					filter.style.display = 'block';
-				}
-			});
-		};
-
-	</script>
-
-
-
 
 	<script type="text/javascript">
 		function openImage(imageUrl) {
